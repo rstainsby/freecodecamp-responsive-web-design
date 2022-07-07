@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill out our survey, we really appreciate it!</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" placeholder="Name" required/>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" placeholder="Email" required/>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Number (optional)</label>
+                <input id="number" type="number" min="10" max="120" pattern="[0-9]*" placeholder="Number"/>
+            </div>
+            <div class="form-group">
+                <label id="dropdown-label" for="dropdown">How did you hear about WikiCamps?</label>
+                <select id="dropdown" name="hear-about-us">
+                    <option value="social-media">Social media</option>
+                    <option value="friend">From a friend</option>
+                    <option value="advert">TV advertisement</option>
+                    <option value="web-search">Web search</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend WikiCamps to a friend?</p>                
+                <input id="would-you-recommend-yes" value="definetly" name="would-you-recommend" type="radio"/>
+                <label for="would-you-recommend-yes">Definetly</label>
+                <input id="would-you-recommend-maybe" value="maybe" name="would-you-recommend" type="radio"/>
+                <label for="would-you-recommend-maybe">Maybe</label>
+                <input id="would-you-recommend-no" value="probably-not" name="would-you-recommend" type="radio"/>
+                <label for="would-you-recommend-no">Probably not</label>
+            </div>
+            <div class="form-group">
+                <p>What are the main things you are looking for when you use WikiCamps? (check all that apply)</p>
+                <input id="looking-for-paid-campsites" value="paid-campsites" name="looking-for" type="checkbox"/>
+                <label for="looking-for-paid-campsites">Paid campsites</label>
+                <input id="looking-for-paid-campsites" value="free-campsites" name="looking-for" type="checkbox"/>
+                <label for="looking-for-free-campsites">Free campsites</label>
+                <input id="looking-for-caravan-parks" value="caravan-parks" name="looking-for" type="checkbox"/>
+                <label for="looking-for-caravan-parks">Caravan parks</label>
+                <input id="looking-for-ammenities" value="ammenities" name="looking-for" type="checkbox"/>
+                <label for="looking-for-ammenities">Ammenities</label>
+                <input id="looking-for-points-of-interest" value="points-of-interest" name="looking-for" type="checkbox"/>
+                <label for="looking-for-points-of-interest">Points of interest</label>
+                <input id="looking-for-4wd-tracks" value="4wd-tracks" name="looking-for" type="checkbox"/>
+                <label for="looking-for-4wd-tracks">Four-wheel drive tracks</label>
+            </div>
+            <div class="form-group">
+                <label id="comments-or-suggestions-label" for="comments-or-suggestions">Any comments or suggestions?</label>
+                <textarea id="comments-or-suggestions"></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
