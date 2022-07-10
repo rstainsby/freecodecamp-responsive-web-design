@@ -1,0 +1,133 @@
+:root {
+    font-size: 16px;
+    font-family: "Montserrat";
+    --primary-text-color: #686868;
+    --secondary-text-color: #414141;
+    --inverted-text-color: #FFFFFF;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color-alpha: rgba(27, 27, 50, 0.8);
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.45;
+    color: var(--primary-text-color);
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image:  url("resources/heroau.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary-background-color);
+}
+
+h1 {
+    font-family: "Montserrat";	
+    font-style: normal;
+	font-weight: 400;
+    font-size: 3rem;
+	color: var(--secondary-text-color);
+	line-height: 1.25;
+	margin: 0.625rem 0;
+}
+
+.container {
+    max-width: 740px;
+    width: 100%;
+    margin: 8rem auto 0rem auto;
+}
+
+#survey-form {
+    background-color: var(--secondary-background-color-alpha);
+    display: block;
+    padding: 2.5rem 1.625rem;
+    border-radius: 0.35rem;
+    color: var(--inverted-text-color);
+}
+
+.form-group {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    font-size: 1.25rem;
+}
+
+.form-control {
+    width: 100%;
+    height: 2.25rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
+    font-size: 1rem;
+}
+
+.form-group > label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.input-radio,
+.input-checkbox {
+    margin-right: 1.25rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea {
+    min-height: 6rem;
+    width: 100%;
+    padding: 0.675rem;
+    font-size: inherit;
+}
+
+.info-text {
+    font-size: 0.9rem;
+    margin-left: 0.25rem;
+}
+
+#logo {
+    width: 100%;
+    text-align: center;
+}
+
+#logo > img {
+    width: 200px;
+    border: 1px solid #FFFFFF;
+}
+
+#title {
+    text-align: center;
+    color: var(--inverted-text-color);
+}
+
+#description {
+    text-align: center;
+    color: var(--inverted-text-color);
+}
+
+#submit {
+    min-height: 3rem;
+    width: 100%;
+    margin: 1rem auto 0rem auto;
+    font-size: 1.25rem;
+    color: var(--inverted-text-color);
+    background-color: #4472c4;
+    border: 1px solid #FFFFFF;
+    border-radius: 0.25rem;
+    transition: background-color 0.25s linear;
+}
+
+#submit:hover {
+    background-color: #234d96;
+    border-color: #234d96;
+    cursor: pointer;
+}
